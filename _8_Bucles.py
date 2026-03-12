@@ -36,3 +36,67 @@ for x in range(n_max): #se ejecuta desde 0 hasta el numero que le pasemos
         a,b = b,a+b
 print(lista_fibonacci)
 
+#LAB 3
+palabra = input("Ingrese una palabra: ")
+palabra = palabra.upper()
+#hacemos un barrido por cada letra de la palabra
+#si la letra es una vocal, no la imprimimos
+for letra in palabra:
+    if letra == "A":
+        continue
+    elif letra == "E":
+        continue
+    elif letra == "I":
+        continue
+    elif letra == "O":
+        continue
+    elif letra == "U":
+        continue
+    print(letra)
+
+#LAB 4
+word = ""
+palabra = input("Ingrese una palabra: ")
+palabra = palabra.upper()
+
+#vamos a hacer un barrido por cada letra de la palabra
+#si la letra es una vocal, no la agregamos a la cadena
+for letra in palabra: 
+    if letra == "A":
+        continue
+    elif letra == "E":
+        continue
+    elif letra == "I":
+        continue
+    elif letra == "O":
+        continue
+    elif letra == "U":
+        continue
+    else:
+        word = word + letra
+print(word)
+
+
+#LAB 5 creo
+bloques = int(input("Ingrese la cantidad de bloques que contiene la piramide: "))
+i = 1
+altura = 0
+while bloques >= i:
+    bloques -= i
+    altura +=1
+    i += 1
+print(altura)
+
+
+
+#LAB 6
+x = int(input("Ingrese un numero positivo mayor a 0: "))
+pasos = 0
+while x != 1:
+    if x % 2 == 0:
+        x /= 2
+    else:
+        x = (x*3)+1
+    print(x)
+    pasos += 1
+print("pasos: ",pasos)
