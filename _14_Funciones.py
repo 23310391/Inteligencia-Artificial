@@ -4,7 +4,7 @@ a este codigo si le eché ganitas, es de la 4.3 a la 4.5
 
 #funcion con 2 parametros
 def nombre2 (name, gender):
-    gender = gender.lower() #aun que eswcribamos con mayusculas, lo va a detectar bien
+    gender = gender.lower() #aun que escribamos con mayusculas, lo va a detectar bien
     if (gender == "mujer"):
         adjetivo = "reina"
     elif (gender == "hombre"):
